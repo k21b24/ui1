@@ -1,0 +1,125 @@
+/* styles.css */
+
+/* Animation for the background */
+@keyframes gradient {
+    0% {
+        background-color: #FFD600; /* Yellow */
+    }
+    50% {
+        background-color: #000000; /* Black */
+    }
+    100% {
+        background-color: #FFD600; /* Yellow */
+    }
+}
+
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, #FFD600, #000000);
+    animation: gradient 5s ease infinite; /* Animated background */
+}
+
+/* Login container styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items */
+}
+
+/* Header styles */
+h1 {
+    color: #000000; /* Black */
+    margin-bottom: 20px;
+    text-align: center; /* Center text */
+    display: flex;
+    align-items: center; /* Center icon and text vertically */
+}
+
+/* Snail icon styles */
+.snail-icon {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Input group styles */
+.input-group {
+    width: 100%; /* Full width */
+    margin-bottom: 20px;
+}
+
+/* Label styles */
+label {
+    display: block; /* Block display for equal spacing */
+    margin-bottom: 5px;
+    text-align: left; /* Align text to the left */
+}
+
+/* Input styles */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #FFD600; /* Yellow focus border */
+}
+
+/* Button styles */
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFD600; /* Yellow */
+    border: none;
+    border-radius: 4px;
+    color: #000000; /* Black */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #e6c700; /* Darker yellow on hover */
+}
+
+/* Footer link styles */
+.footer-links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
